@@ -6,18 +6,50 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="src/style.css" />
     <title>Poem Generator</title>
   </head>
   <body>
     <div class="container">
-      <h1>Poem Generator</h1>
-      <h3>
-        Coded by <a href="#">Ana Chicaiza</a> and is open-sourced on
-        <a href="#">GitHub</a> and hosted on <a href="#">Netlify</a>
-      </h3>
+      <header>
+        <div>
+          <h1>Poem Generator</h1>
+          <p>
+            Coded by <a href="#">Ana Chicaiza</a> and is open-sourced on
+            <a href="#">GitHub</a> and hosted on <a href="#">Netlify.</a>
+          </p>
+        </div>
+        <a href="https://www.shecodes.io/" target="_blank">
+          <img src="img/logo.png" alt="sheCodes-logo" class="logo" />
+        </a>
+      </header>
+      <div class="form-search">
+        <form id="poem-generator">
+          <input
+            type="text"
+            name=""
+            id="search-input"
+            class="topic"
+            required
+            placeholder="Enter the topic of the poem"
+          />
+          <input
+            type="submit"
+            value="Generate Poem"
+            class="button"
+            id="submit-btn"
+          />
+        </form>
+        <div class="hint">i.e: Car, Dance or Cheese</div>
+      </div>
+      <div class="poem"></div>
+    </div>
+    <div class="poem" id="poem">
+      <span class="wrapper"></span>
+      <span class="cursor"></span>
     </div>
   </body>
 </html>
