@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>Poem Generator</title>
   </head>
@@ -17,11 +18,7 @@
     <div class="container">
       <header>
         <div>
-          <h1>Poem Generator</h1>
-          <p>
-            Coded by <a href="#">Ana Chicaiza</a> and is open-sourced on
-            <a href="#">GitHub</a> and hosted on <a href="#">Netlify.</a>
-          </p>
+          <h1>AI Poem Generator</h1>
         </div>
         <a href="https://www.shecodes.io/" target="_blank">
           <img src="img/logo.png" alt="sheCodes-logo" class="logo" />
@@ -46,11 +43,14 @@
         </form>
         <div class="hint">i.e: Car, Dance or Cheese</div>
       </div>
-      <div class="poem"></div>
+      <div class="poem" id="poem"></div>
+      <footer>
+        <p>
+          Coded by <a href="#">Ana Chicaiza</a> and is open-sourced on
+          <a href="#">GitHub</a> and hosted on <a href="#">Netlify.</a>
+        </p>
+      </footer>
     </div>
-    <div class="poem" id="poem">
-      <span class="wrapper"></span>
-      <span class="cursor"></span>
-    </div>
+    <script src="src/script.js"></script>
   </body>
 </html>
